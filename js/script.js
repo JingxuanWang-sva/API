@@ -29,7 +29,7 @@ request.onload = function() {
   if (request.status >= 200 && request.status < 400) {
     data.forEach(movie => {
       const card = document.createElement('div')
-      card.setAttribute('class', 'card')
+      card.setAttribute('class', 'card animated bounce')
 
       const h1 = document.createElement('h1')
       h1.textContent = movie.title
